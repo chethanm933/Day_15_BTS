@@ -35,14 +35,14 @@ public class MyBinaryNode<K extends Comparable<K>> {
 	}
 
 	public void addRecursively(INode node) {
-		if(root == null) {
+		if (root == null) {
 			System.out.println("Tree is empty");
 			return;
-		}else {
-			if(node.left!=null)
+		} else {
+			if (node.left != null)
 				addRecursively(node.left);
-			System.out.print(node.key+" ");
-			if(node.right!=null)
+			System.out.print(node.key + " ");
+			if (node.right != null)
 				addRecursively(node.right);
 		}
 	}
@@ -53,6 +53,17 @@ public class MyBinaryNode<K extends Comparable<K>> {
 		binaryTree.add(56);
 		binaryTree.add(30);
 		binaryTree.add(70);
+		binaryTree.add(22);
+		binaryTree.add(40);
+		binaryTree.add(60);
+		binaryTree.add(95);
+		binaryTree.add(11);
+		binaryTree.add(65);
+		binaryTree.add(3);
+		binaryTree.add(16);
+		binaryTree.add(63);
+		binaryTree.add(67);
+
 		System.out.println("After adding node : ");
 		binaryTree.addRecursively(binaryTree.root);
 	}
